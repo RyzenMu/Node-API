@@ -1,0 +1,3 @@
+endpoint -- https://api.kanye.rest
+paths -- /Programming
+parameters -- /?var=monday&var1=tuesday
