@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const request = require('request');
+const mailchimpKey ='d288a17cbb3d26acf2f28bb8a869d36c-us13';
+const serverPrefix = 'us13';
 
 app.listen(8000, ()=>{
     console.log('server running on port 8000');    
@@ -19,10 +21,27 @@ app.post('/', (req, res)=>{
     const lastName = req.body.lastName;
     const email = req.body.email;
     const password = req.body.password;
-    console.log();
-    console.log(firstName);
-    console.log(lastName);
-    console.log(email);
-    console.log(password);    
+    
+//     const client = require("@mailchimp/mailchimp_marketing");
+
+// client.setConfig({
+//   apiKey: mailchimpKey,
+//   server: serverPrefix,
+// });
+// const mailchimp = require('@mailchimp/mailchimp_marketing');
+
+// mailchimp.setConfig({
+//   apiKey: mailchimpKey,
+//   server: serverPrefix,
+// });
+
+
+// async function callPing() {
+//     const response = await mailchimp.ping.get();
+//     console.log(response);
+//   }
+  
+//   callPing();
+
 })
 

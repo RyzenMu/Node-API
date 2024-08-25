@@ -6,3 +6,7 @@ json is widely used format in web
 apis can be obtained using https, axios, etc...
 httpstatusdogs
 JSON.parse(data) -- will convert the data to object
+mailchimp api
+bootstrap examples
+sendinblue
+brevo
