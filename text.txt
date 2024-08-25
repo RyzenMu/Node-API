@@ -1,3 +1,8 @@
 endpoint -- https://api.kanye.rest
 paths -- /Programming
 parameters -- /?var=monday&var1=tuesday
+authentication --
+json is widely used format in web
+apis can be obtained using https, axios, etc...
+httpstatusdogs
+JSON.parse(data) -- will convert the data to object
