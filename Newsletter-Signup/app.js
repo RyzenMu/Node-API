@@ -21,27 +21,21 @@ app.post('/', (req, res)=>{
     const lastName = req.body.lastName;
     const email = req.body.email;
     const password = req.body.password;
-    
-//     const client = require("@mailchimp/mailchimp_marketing");
 
-// client.setConfig({
-//   apiKey: mailchimpKey,
-//   server: serverPrefix,
-// });
-// const mailchimp = require('@mailchimp/mailchimp_marketing');
+    const data = {
+        members :[
+            {
+                email_address : email,
+                status : "subscribed",
+                merge_fields : {
+                    FNAME : firstName,
+                    LNAME : lastName
+                }
+            }
+        ]
+    }
 
-// mailchimp.setConfig({
-//   apiKey: mailchimpKey,
-//   server: serverPrefix,
-// });
-
-
-// async function callPing() {
-//     const response = await mailchimp.ping.get();
-//     console.log(response);
-//   }
-  
-//   callPing();
+    const jsonData = JSON.stringify(data);
 
 })
 
