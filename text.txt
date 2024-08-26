@@ -10,3 +10,5 @@ mailchimp api
 bootstrap examples
 sendinblue
 brevo
+heroku
+process.env.PORT
